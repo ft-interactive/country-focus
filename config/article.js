@@ -1,17 +1,17 @@
 export default () => ({ // eslint-disable-line
 
   // link file UUID
-  id: '$uuid',
+  id: '',
 
   // canonical URL of the published page
-  // "$url" get filled in by the ./configure script
-  url: '$url',
+  //  get filled in by the ./configure script
+  url: '',
 
   // To set an exact publish date do this:
   //       new Date('2016-05-17T17:11:22Z')
   publishedDate: new Date(),
 
-  headline: 'Politics and the English Language',
+  headline: 'Economic Dashboard',
 
   // summary === standfirst (Summary is what the content API calls it)
   summary: 'Political language is designed to make lies sound truthful' +
@@ -54,7 +54,7 @@ export default () => ({ // eslint-disable-line
 
   /*
   TODO: Select Twitter card type -
-        "summary" or "summary_large_image"
+        summary or summary_large_image
 
         Twitter card docs:
         https://dev.twitter.com/cards/markup
@@ -76,7 +76,7 @@ export default () => ({ // eslint-disable-line
   // twitterRelatedAccounts: ['authors_account_here', 'ftdata'], // Twitter lists these as suggested accounts to follow after a user tweets (do not include @)
 
   // Fill out the Facebook/Twitter metadata sections below if you want to
-  // override the "General social" options above
+  // override the General social options above
 
   // TWITTER METADATA (for Twitter cards)
   // twitterImage: '',
@@ -113,7 +113,7 @@ export default () => ({ // eslint-disable-line
     /*
     Product name
 
-    This will usually default to "IG"
+    This will usually default to IG
     however another value may be needed
     */
     // product: '',

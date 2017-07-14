@@ -1,4 +1,5 @@
 import article from './article';
+import getDashConfig from './dashboard';
 import getFlags from './flags';
 import getOnwardJourney from './onward-journey';
 
@@ -6,6 +7,7 @@ export default async () => {
   const d = await article();
   const flags = await getFlags();
   const onwardJourney = await getOnwardJourney();
+  const dashboard = await getDashConfig();
   /*
   An experimental demo that gets content from the API
   and overwrites some model values. This requires the Link File
@@ -32,5 +34,6 @@ export default async () => {
     ...d,
     flags,
     onwardJourney,
+    dashboard,
   };
 };

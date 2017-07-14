@@ -1,19 +1,8 @@
-/*
-  TODO: delete this comment
+// import Dashboard from './components/Dashboard';
 
-  This file is where you bootstrap your JS code
-  For example import stuff here:
+// const CountryDashboard = new Dashboard({
+//   container: '#dash',
+//   dataUrl: 'https://bertha.ig.ft.com/view/publish/gss/1xFgTur9VO9IUw2yUL_13s1FqFynGzXN_Pc1URYFvE40/countries,indicators',
+// });
 
-  import {select} from 'd3-selection';
-  import myComponent from './components/my-component';
-
-  Split logical parts of you project into components e.g.
-
-  /client
-    - /components
-        - /component-name
-            - styles.scss
-            - index.js
-            - template.html
-
-*/
+// CountryDashboard.render();
