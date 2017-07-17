@@ -1,32 +1,33 @@
 export default () => ({ // eslint-disable-line
 
   // link file UUID
-  id: '$uuid',
+  id: '7a76aa64-61a1-11e7-8814-0ac7eb84e5f1',
 
   // canonical URL of the published page
   // "$url" get filled in by the ./configure script
-  url: '$url',
+  url: 'https://ig.ft.com/special-reports/country-focus/russia/',
 
   // To set an exact publish date do this:
   //       new Date('2016-05-17T17:11:22Z')
   publishedDate: new Date(),
 
-  headline: 'Politics and the English Language',
+  headline: 'Headline goes here',
 
   // summary === standfirst (Summary is what the content API calls it)
-  summary: 'Political language is designed to make lies sound truthful' +
-           'and murder respectable, and to give an appearance of solidity to pure wind',
+  summary: 'Standfirst goes here',
 
   topic: {
-    name: 'Starter Kit',
-    url: '/foo',
+    name: 'Russia Business and Finance',
+    url: 'https://www.ft.com/russia-business-finance',
   },
 
+// this is optional, and usually not needed.
   relatedArticle: {
-    text: 'Related article »',
-    url: 'https://en.wikipedia.org/wiki/Politics_and_the_English_Language',
+    text: '',
+    url: '',
   },
 
+  // this is the large image at the top of the page. 
   mainImage: {
     title: '',
     description: '',
@@ -42,8 +43,9 @@ export default () => ({ // eslint-disable-line
   // Byline can by a plain string, markdown, or array of authors
   // if array of authors, url is optional
   byline: [
-    { name: 'Author One', url: '/foo/bar' },
-    { name: 'Author Two' },
+    { name: 'Owen Walker', url: 'https://www.ft.com/stream/a4df71f6-0fd2-3d24-86f3-205d06934714' },
+    { name: 'Christopher Möller', url: 'https://webkid.io/' },
+    { name: 'Moritz Klack', url: 'https://webkid.io/' },
   ],
 
   // Appears in the HTML <title>
@@ -91,7 +93,7 @@ export default () => ({ // eslint-disable-line
   //ADVERTISING
   ads: {
     // ad unit hierarchy makes ads more granular. Start with ft.com and /companies /markets /world as appropriate to your story
-    gptAdunit: 'ft.com/companies/european',
+    gptAdunit: 'ft.com/world/europe',
     // granular targeting is optional and will be specified by the ads team
     dftTargeting: '',
   },
