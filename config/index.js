@@ -26,6 +26,7 @@ export default async () => {
     name: dashboard.country.sectionname,
     url: dashboard.country.stream,
   };
+
   /*
   An experimental demo that gets content from the API
   and overwrites some model values. This requires the Link File
