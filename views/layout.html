@@ -34,15 +34,7 @@
         </div>
         <div class="article-body o-typography-body-wrapper" itemprop="articleBody">
 
-          <div class="o-grid-container">
-            <div class="o-grid-row">
-              <div data-o-grid-colspan="12 S11 Scenter M9 L8 XL7">
-                <div>
-                  {% block article_body %}{% endblock %}
-                </div>
-              </div>
-            </div>
-          </div>
+          {% include "includes/dashboard.html" %}
 
           <footer class="o-typography-footer" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
             <div class="o-grid-container">
