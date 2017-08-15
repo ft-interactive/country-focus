@@ -16,7 +16,6 @@
 }
 
 .card__header {
-  min-height: 60px;
   margin-top: 0;
   margin-bottom: 0;
   border-bottom: 1px solid #cec6b9;
@@ -27,5 +26,12 @@
 .card__body {
   p {
     font-family: $o-typography-sans;
+  }
+}
+
+
+@include oGridRespondTo(S) {
+  .card__header {
+    min-height: 60px;
   }
 }
