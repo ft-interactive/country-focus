@@ -1,17 +1,5 @@
 @import 'o-colors/main';
 @import 'o-grid/main';
+@import 'o-typography/main';
 @import 'components/core/main';
-
-/*
-      TODO: delete this comment
-
-      Write your code here - keep it neat!
-      Split logical parts of you project into components e.g.
-
-      /client
-        - /components
-            - /component-name
-                - styles.scss
-                - index.js
-                - template.html
-*/
+@import 'components/dashboard';

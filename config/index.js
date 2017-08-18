@@ -4,20 +4,28 @@ import article from './article';
 import getFlags from './flags';
 import getOnwardJourney from './onward-journey';
 
-const countryName = 'Russia';
-
 export default async () => {
   const d = await article();
   const flags = await getFlags();
   const onwardJourney = await getOnwardJourney();
   const dashboardData = (await axios('https://bertha.ig.ft.com/view/publish/gss/1xFgTur9VO9IUw2yUL_13s1FqFynGzXN_Pc1URYFvE40/countries,indicators')).data;
+  const countryName = d.country || 'Russia';
 
   const dashboard = {};
 
-  dashboard.indicators = dashboardData.indicators
-    .filter(indicator => indicator.country === countryName);
   dashboard.country = dashboardData.countries
-    .find(country => country.country === countryName);
+    .find(country => country.country.toLowerCase() === countryName.toLowerCase());
+
+  if (!dashboard.country) {
+    throw new Error(`No country information was found for ${countryName}`);
+  }
+
+  dashboard.indicators = dashboardData.indicators
+  .filter(indicator => indicator.country.toLowerCase() === countryName.toLowerCase());
+
+  if (!dashboard.indicators.length) {
+    throw new Error(`No indicators were found for country ${countryName}`);
+  }
 
   d.headline = dashboard.country.headline;
   d.summary = dashboard.country.standfirst;
@@ -26,6 +34,11 @@ export default async () => {
     name: dashboard.country.sectionname,
     url: dashboard.country.stream,
   };
+
+  const availableCountries = dashboardData.countries.map(country => country.country);
+
+  console.log(`Rendering Dashboard for country ${countryName}`);
+  console.log(`Available countries are: ${availableCountries.join(',')}`);
 
   /*
   An experimental demo that gets content from the API

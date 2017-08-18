@@ -1,5 +1,9 @@
 export default () => ({ // eslint-disable-line
 
+  // set country here to configure which
+  // indicators are displayed in the dashboard page
+  country: 'Russia',
+
   // link file UUID
   id: '7a76aa64-61a1-11e7-8814-0ac7eb84e5f1',
 

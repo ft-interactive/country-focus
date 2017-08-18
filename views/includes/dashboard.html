@@ -1,12 +1,12 @@
 <div class="o-grid-container">
   <div class="o-grid-row">
     {% for item in dashboard.indicators %}
-    <div data-o-grid-colspan="12 S12 M6 L4 XL3">
-      <div class="card o-colors-palette-warm-5">
-        <div class="card__header o-typography-lead--small o-colors-palette-teal-1">{{ item.indicator }}</div>
+    <div class="cards__container" data-o-grid-colspan="12 S6 M6 L3 XL3">
+      <div class="card">
+        <div class="card__header o-typography-subhead">{{ item.indicator }}</div>
         <div class="card__body">
           <img src="{{ item.charturl }}" />
-          <p class="o-typography-body">{{ item.copy }}</p>
+          <p class="o-typography-lead--small">{{ item.copy }}</p>
         </div>
       </div>
     </div>

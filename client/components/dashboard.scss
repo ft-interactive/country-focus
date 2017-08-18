@@ -1,0 +1,44 @@
+@import 'o-typography/main';
+@import 'o-colors/main';
+
+.cards__container {
+  display: flex;
+}
+
+.card {
+  position: relative;
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px 1px rgba(0,0,0,0.15);
+  background: #FDF8F2;
+
+  >* {
+    padding: 10px 15px;
+  }
+}
+
+$headerBackground: oColorsGetPaletteColor('teal');
+
+.card__header {
+  margin-top: 0;
+  margin-bottom: 0;
+  background: $headerBackground;
+  color: oColorsGetTextColor($headerBackground, 100);  
+  @include oTypographySansBold(0);
+}
+
+.card__body {
+  p {
+    @include oTypographySans(0, 1.2)
+  }
+}
+
+
+// @include oGridRespondTo(S) {
+//   .card__header {
+//     min-height: 60px;
+//   }
+// }
