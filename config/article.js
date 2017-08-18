@@ -5,7 +5,8 @@ export default () => ({ // eslint-disable-line
   country: 'Russia',
 
   // link file UUID
-  id: '7a76aa64-61a1-11e7-8814-0ac7eb84e5f1',
+  // this is set from remote data
+  // id: '7a76aa64-61a1-11e7-8814-0ac7eb84e5f1',
 
   // canonical URL of the published page
   // "$url" get filled in by the ./configure script

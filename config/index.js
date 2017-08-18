@@ -7,7 +7,7 @@ import getOnwardJourney from './onward-journey';
 export default async () => {
   const d = await article();
   const flags = await getFlags();
-  const onwardJourney = await getOnwardJourney();
+  // const onwardJourney = await getOnwardJourney();
   const dashboardData = (await axios('https://bertha.ig.ft.com/view/publish/gss/1xFgTur9VO9IUw2yUL_13s1FqFynGzXN_Pc1URYFvE40/countries,indicators')).data;
   const countryName = d.country || 'Russia';
 
@@ -39,6 +39,14 @@ export default async () => {
 
   console.log(`Rendering Dashboard for country ${countryName}`);
   console.log(`Available countries are: ${availableCountries.join(',')}`);
+
+  d.id = dashboard.country.linkfileuuid;
+
+  const onwardJourney = {
+    relatedContent: [
+      { rows: 2, list: `thing/${dashboard.country.onwardjourney}` },
+    ],
+  };
 
   /*
   An experimental demo that gets content from the API
