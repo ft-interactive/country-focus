@@ -51,6 +51,7 @@ export default () => ({ // eslint-disable-line
     { name: 'Owen Walker', url: 'https://www.ft.com/stream/a4df71f6-0fd2-3d24-86f3-205d06934714' },
     { name: 'Christopher Möller', url: 'https://webkid.io/' },
     { name: 'Moritz Klack', url: 'https://webkid.io/' },
+    { name: 'Valentina Romei', url: 'https://www.ft.com/valentina-romei' },
   ],
 
   // Appears in the HTML <title>
