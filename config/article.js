@@ -5,7 +5,8 @@ export default () => ({ // eslint-disable-line
   country: 'Russia',
 
   // link file UUID
-  id: '7a76aa64-61a1-11e7-8814-0ac7eb84e5f1',
+  // this is set from remote data
+  // id: '7a76aa64-61a1-11e7-8814-0ac7eb84e5f1',
 
   // canonical URL of the published page
   // "$url" get filled in by the ./configure script
@@ -50,6 +51,7 @@ export default () => ({ // eslint-disable-line
     { name: 'Owen Walker', url: 'https://www.ft.com/stream/a4df71f6-0fd2-3d24-86f3-205d06934714' },
     { name: 'Christopher Möller', url: 'https://webkid.io/' },
     { name: 'Moritz Klack', url: 'https://webkid.io/' },
+    { name: 'Valentina Romei', url: 'https://www.ft.com/valentina-romei' },
   ],
 
   // Appears in the HTML <title>
