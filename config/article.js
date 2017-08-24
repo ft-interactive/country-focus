@@ -2,7 +2,7 @@ export default () => ({ // eslint-disable-line
 
   // set country here to configure which
   // indicators are displayed in the dashboard page
-  country: 'Russia',
+  country: 'Slovakia',
 
   // link file UUID
   // this is set from remote data
@@ -10,7 +10,7 @@ export default () => ({ // eslint-disable-line
 
   // canonical URL of the published page
   // "$url" get filled in by the ./configure script
-  url: 'https://ig.ft.com/special-reports/country-focus/russia/',
+  url: 'https://ig.ft.com/special-reports/country-focus/slovakia/',
 
   // To set an exact publish date do this:
   //       new Date('2016-05-17T17:11:22Z')
@@ -48,9 +48,11 @@ export default () => ({ // eslint-disable-line
   // Byline can by a plain string, markdown, or array of authors
   // if array of authors, url is optional
   byline: [
+    { name: 'James Shotter', url: 'https://www.ft.com/stream/47621d35-9ede-32c6-88bd-5491e1903830' },
+    { name: 'Valentina Romei', url: 'https://www.ft.com/valentina-romei' },
     { name: 'Christopher Möller', url: 'https://webkid.io/' },
     { name: 'Moritz Klack', url: 'https://webkid.io/' },
-    { name: 'Valentina Romei', url: 'https://www.ft.com/valentina-romei' },
+
   ],
 
   // Appears in the HTML <title>
