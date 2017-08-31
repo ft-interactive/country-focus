@@ -36,7 +36,6 @@
 
           {% include "includes/dashboard.html" %}
           {% if flags.ads %}{{ macros.middleAd() }}{% endif %}
-          {% if flags.onwardjourney %}{% include "includes/onwardjourney.html" %}{% endif %}
 
           <footer class="o-typography-footer" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
             <div class="o-grid-container">
@@ -53,9 +52,9 @@
       </article>
     </main>
 
-    <!-- {% if flags.onwardjourney %}
+  {% if flags.onwardjourney %}
       {% include "includes/onwardjourney.html" %}
-    {% endif %} -->
+    {% endif %}
 
     {% if flags.comments %}
       {% include "includes/comments.html" %}
