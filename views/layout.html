@@ -35,6 +35,7 @@
         <div class="article-body o-typography-body-wrapper" itemprop="articleBody">
 
           {% include "includes/dashboard.html" %}
+          {% if flags.ads %}{{ macros.middleAd() }}{% endif %}
 
           <footer class="o-typography-footer" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
             <div class="o-grid-container">
