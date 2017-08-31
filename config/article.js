@@ -101,7 +101,7 @@ export default () => ({ // eslint-disable-line
     // Ad unit hierarchy makes ads more granular.
     gptSite: 'ft.com',
     // Start with ft.com and /companies /markets /world as appropriate to your story
-    gptZone: 'special-reports/focus.russia',
+    gptZone: 'special.reports/focus.russia',
     // granular targeting is optional and will be specified by the ads team
     dfpTargeting: false,
   },
