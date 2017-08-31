@@ -16,7 +16,7 @@ export default () => ({ // eslint-disable-line
   //       new Date('2016-05-17T17:11:22Z')
   publishedDate: new Date(),
 
-  headline: 'Headline goes here',
+  headline: '',
 
   // summary === standfirst (Summary is what the content API calls it)
   summary: 'Standfirst goes here',
@@ -100,7 +100,7 @@ export default () => ({ // eslint-disable-line
   //ADVERTISING
   ads: {
     // ad unit hierarchy makes ads more granular. Start with ft.com and /companies /markets /world as appropriate to your story
-    gptAdunit: 'ft.com/world/europe',
+    gptAdunit: 'ft.com/special.reports/focus.czech',
     // granular targeting is optional and will be specified by the ads team
     dftTargeting: '',
   },
