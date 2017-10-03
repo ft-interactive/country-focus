@@ -14,7 +14,7 @@ export default () => ({ // eslint-disable-line
 
   // To set an exact publish date do this:
   //       new Date('2016-05-17T17:11:22Z')
-  publishedDate: new Date(),
+  publishedDate: new Date('2017-09-18T09:40:01.973Z'),
 
   headline: 'Headline goes here',
 
@@ -48,9 +48,10 @@ export default () => ({ // eslint-disable-line
   // Byline can by a plain string, markdown, or array of authors
   // if array of authors, url is optional
   byline: [
+    { name: 'Kathrin Hille', url: 'https://www.ft.com/stream/90ace903-657b-3685-9e3c-7502d7005184' },
+    { name: 'Valentina Romei', url: 'https://www.ft.com/valentina-romei' },
     { name: 'Christopher Möller', url: 'https://webkid.io/' },
     { name: 'Moritz Klack', url: 'https://webkid.io/' },
-    { name: 'Valentina Romei', url: 'https://www.ft.com/valentina-romei' },
   ],
 
   // Appears in the HTML <title>
@@ -100,7 +101,7 @@ export default () => ({ // eslint-disable-line
     // Ad unit hierarchy makes ads more granular.
     gptSite: 'ft.com',
     // Start with ft.com and /companies /markets /world as appropriate to your story
-    gptZone: 'special-reports',
+    gptZone: 'special.reports/focus.russia',
     // granular targeting is optional and will be specified by the ads team
     dfpTargeting: false,
   },
